@@ -6,7 +6,8 @@ public class Node {
 	Node next = null;
 	public Node(int node) {
 		super();
-		this.data = data;
+		this.data =data ;
 	}
 	
 }
+
