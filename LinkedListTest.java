@@ -12,6 +12,6 @@ public class LinkedListTest {
 		
 		list.displayLinkedList();
 		
-		list.findNode(30);
+		list.displayLinkedList();
 	}
 }
