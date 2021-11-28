@@ -1,10 +1,9 @@
 package com.LinledList;
 
 public class LinkedListServices {
-
-	Node head = null;;
-
 	
+	Node head = null;
+
 	public void insertAtHead(int value) {
 		Node newNode = new Node(value);
 		newNode.next = head;
@@ -14,14 +13,14 @@ public class LinkedListServices {
 	public void append(int value) {
 		Node currentNode = head;
 		Node newNode = new Node(value);
+		
 		while(currentNode.next != null) {
 			currentNode = currentNode.next;
+		}		
 		
-		}
-	currentNode.next = newNode;
-	
+		currentNode.next = newNode;
 	}
-
+	
 	public void insertBetween(int before, int value) {
 		Node currentNode = head;
 		Node newNode = new Node(value);
@@ -32,16 +31,21 @@ public class LinkedListServices {
 		
 		newNode.next = currentNode.next;
 		currentNode.next = newNode;
+		
+	}
+	
+	public void pop() {
+		head = head.next;
 	}
 	
 	public void displayLinkedList() {
 		Node currentNode = head;
 		
-		while(currentNode !=null) {
-			
-			System.out.println(" " +currentNode.data);
-			currentNode= currentNode.next;
+		while(currentNode != null) {
+			System.out.print(" " + currentNode.data);
+			currentNode = currentNode.next;
 		}
+		
+		System.out.println();
 	}
-	
 }
