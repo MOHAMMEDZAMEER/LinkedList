@@ -4,13 +4,13 @@ public class LinkedListTest {
 
 	public static void main(String[] args) {
 		
-		Node node1= new Node(56);
-		Node node2= new Node(30);
-		Node node3= new Node(70);
+LinkedListServices list = new LinkedListServices();
 		
+		list.insertAtHead(56);
+		list.append(70);
+		list.displayLinkedList();
 		
-		node1.next=node2;
-		node2.next=node3;
+		list.insertBetween(56, 30);
+		list.displayLinkedList();
 	}
-
 }
